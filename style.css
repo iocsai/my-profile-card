@@ -1,0 +1,150 @@
+/* 
+    Created on : 2018.08.24., 12:30:18
+    Author     : Steve
+*/
+
+/* ==== BASE STYLES ==== */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+img {
+    width: 160px;
+    border-radius: 25%;
+}
+
+h1 {
+    font:  small-caps 2rem 'Uncial Antiqua', cursive;
+}
+
+h2 {
+    font: bold 1.125rem 'Uncial Antiqua', cursive;
+}
+
+h3 {
+    font: italic .625rem 'Uncial Antiqua', cursive;
+    margin-top: 1rem;
+}
+
+.links h3 {
+    font-size: 1rem;
+}
+
+p {
+    font: .875rem 'Raleway', sans-serif;
+}
+
+a {
+    color: lightblue;
+}
+
+/* ==== COMPONENT STYLES ==== */
+
+.profile-card {
+    width: 40%;
+    max-width: calc(100vw - 10px);
+}
+
+.head, .links {
+    text-align: center;
+}
+
+.head, .content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.head, .about {
+    margin-bottom: 10%;
+}
+
+.content {
+    padding: 5% 10%;
+    border-top: 1px solid hsla(0, 0%, 30%, .8);
+}
+
+.name-headline {
+    text-align: right;
+    align-items: flex-end;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 1.125rem;
+}
+
+.map-marker {
+    color: royalblue;
+}
+
+/* Contact links */
+
+section {
+    font-style: italic;
+    font-size: 1.125rem;
+}
+
+ul {
+    list-style-type: none;
+}
+li {
+    display: inline;
+    width: 200%;
+}
+
+/* Background image style */
+
+body {
+    background: url('https://i.imgur.com/zl1hFZh.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.profile-card {
+    background-color: hsla(0, 0%, 100%, .5);
+    border-radius: 1%;
+    box-shadow: hsla(0, 0%, 0%, .8) 10px 10px 80px;
+}
+
+/* Profile image style */
+
+.profile-image {
+    margin-top: -7%;
+    float: right;
+}
+
+img {
+    padding: 10%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 0.5s ease-in-out;
+    filter: grayscale(50%);
+}
+
+img:hover {
+    transform: scale(1.1);
+    filter: grayscale(20%);
+}
+
+    /* Polaroid style image */
+    
+div.polaroid {
+    width: 30%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(100, 100, 100, 0.2), 
+        0 6px 12px 0 rgba(100, 100, 100, 0.19);
+}
+
+div.container {
+    text-align: center;
+    padding: 10% 20%;
+}
+
+    /* Hexagon shape image */
+    
+div.hexagon {
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
